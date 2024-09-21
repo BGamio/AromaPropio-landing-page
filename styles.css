@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+header.hero {
+    background-image: url('pexelsnastyasensei954405_7447a398dc444886a49a79093cdf3b13.jpg'); /* Imagen de fondo */
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: rgba(36, 34, 34, 0.5);/* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;font-family: 'Georgia', serif;
+    color: #724d35;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #b1740f; /* Naranja */
+}
+
+.btn {
+    background-color: #b1740f; /* Amarillo */
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.btn:hover {
+    background-color: #8e5b0d;
+  }
+
+.about, .gallery, .contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about {
+    background-color: #FFE5D9; /* Coral suave */
+}
+
+.gallery {
+    background-color: #FFF5E1; /* Amarillo suave */
+}
+
+.contact {
+    background-color: #FFEBCC; /* Naranja suave */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #FF6F61; /* Coral */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #FFB347; /* Naranja */
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery-images img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form button {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #FFB347; /* Naranja */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #FFD700; /* Amarillo */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .gallery-images img {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .btn {
+        font-size: 0.9em;
+        padding: 6px 12px;
+    }
+
+    .gallery-images img {
+        width: 100%;
+    }
+}
