@@ -152,57 +152,188 @@ header.hero {
     border-radius: 10px;
 }
 
-.hero h1 {
-    font-size: 3em;
-    margin: 0;font-family: 'Georgia', serif;
+.hero-content h1 {
+    font-size: 4em;
+    margin: 0;
+    font-family: 'Georgia', serif;
     color: #724d35;
+    text-shadow: 0 10px 15px #000;
 }
 
 .hero p {
     font-size: 1.5em;
-    margin: 10px 0;
-    color: #b1740f; /* Naranja */
+    padding: 10px 20px;
+    margin: 10px 10px;
+    color: #b1740f;
 }
 
 .btn {
-    background-color: #b1740f; /* Amarillo */
-    color: #333;
+    width: 50%;
+    height: 6vh;
+    margin: 30px;
+    background-color: #8e5b0d;
+    color: white;
+    border: none;
+    font-size: 120%;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.3s linear;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2em;
 }
 
 .btn:hover {
-    background-color: #8e5b0d;
-  }
+    scale: 1.1;
+    color: #833f11;
+    border: 2px solid #833f11;
+    background-color: transparent;
+    font-weight: 700;
+    box-shadow: 0 10px 15px #000;
+}
 
-.about, .gallery, .contact {
-    padding: 50px 0;
-    text-align: center;
+/* About */
+
+section .content {
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
 }
 
 .about {
-    background-color: #915840; /* Coral suave */
+    background-color: #4a4a4a;
 }
 
-.gallery {
-    background-color: #FFF5E1; /* Amarillo suave */
+.about .about-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+section .title span {
+    color: #251b0b;
+    font-size: 3em;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+section .title span::before,
+section .title span::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #251b0b;
+    left: 0;
+    bottom: 0;
+}
+
+section .title span::after {
+    bottom: -8px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section .topic {
+    color: rgba(114, 77, 53, 0.77);
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0 5px 10px #000;;
+    margin-bottom: 10px;
+}
+
+.about-details p {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.services .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.services {
+    background-color: #4a4a4a;
+}
+
+.services h3 {
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    align-items: center;
+    padding: 0 0 20px 0;
+}
+
+.services p {
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.services .boxes .box {
+    margin: 20px 0;
+    width: calc(100% / 3 - 20px);
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 10px #000;
+    cursor: default;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.services .boxes .box:hover {
+    background-color: rgba(114, 77, 53, 0.77);
+    color: white;
+}
+
+.services .boxes .box .i {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(114, 77, 53, 0.77);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: white;
+    margin: 0 auto 10px auto;
+    transition: all 0.4s ease;
+}
+
+.boxes .box .i:hover {
+    background-color: white;
+    color: rgba(114, 77, 53, 0.77);
+}
+
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p {
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p {
+    color: white;
 }
 
 .contact {
-    background-color: #FFEBCC; /* Naranja suave */
+    background-color: #4a4a4a;
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
-}
-
-h2 {
-    color: #8c261c;
-    font-size: 2.5em;
-    margin-bottom: 20px;
 }
 
 p {
@@ -241,14 +372,14 @@ form input, form button {
 }
 
 form button {
-    background-color: #FFB347; /* Naranja */
+    background-color: #b17a22; /* Naranja */
     color: #fff;
     border: none;
     cursor: pointer;
 }
 
 form button:hover {
-    background-color: #FFD700; /* Amarillo */
+    background-color: #986b21; /* Amarillo */
 }
 
 /* Media Queries para Responsividad */
