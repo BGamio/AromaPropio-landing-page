@@ -3,28 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfumes Personalizados</title>
+    <title>Aroma Propio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav>
+        <div class="nav-container">
+            <div class="links">
+                <div class="link"><a href="#">Home</a></div>
+                <div class="link"><a href="#">About</a></div>
+                <div class="link"><a href="#">Services</a></div>
+                <div class="link"><a href="#">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
     <header class="hero">
         <div class="hero-content">
+            <img src="assets/pexelsnastyasensei954405_7447a398dc444886a49a79093cdf3b13.jpg">
             <h1>Perfumes Personalizados</h1>
             <p>Descubre tu fragancia única</p>
             <a href="#about" class="btn">Saber Más</a>
         </div>
     </header>
 
-    <section id="about" class="about">
-        <div class="container">
+    <section class="about" id="about">
+        <div class="content">
+            <div class="title"><span>About Us</span></div>
+            <div class="about-details">
+                <div class="right">
+                    <div class="topic">En Aroma Propio</div>
+                    <p>Damos una experiencia en perfumes personalizados, nos dedicamos a crear fragancias únicas que reflejan tu personalidad y estilo. Nuestro equipo de expertos perfumistas trabaja con los mejores ingredientes para ofrecerte una experiencia olfativa inigualable.</p>
+                    <p>Desde 2020, hemos ayudado a miles de clientes a encontrar su aroma perfecto. Únete a nosotros y descubre la magia de los perfumes personalizados.</p>
+                </div>
+            </div>
             <h2>Acerca de Nosotros</h2>
-            <p>En Perfumes Personalizados, nos dedicamos a crear fragancias únicas que reflejan tu personalidad y estilo. Nuestro equipo de expertos perfumistas trabaja con los mejores ingredientes para ofrecerte una experiencia olfativa inigualable.</p>
-            <p>Desde 2020, hemos ayudado a miles de clientes a encontrar su aroma perfecto. Únete a nosotros y descubre la magia de los perfumes personalizados.</p>
-        </div>
+            </div>
     </section>
 
-    <section class="gallery">
-        <div class="container">
+    <section class="services" id="services">
+        <div class="content">
+            <div class="title"><span>Our Services</span></div>
+            <div class="boxes">
+                <div class="box">
+                    <i class="fas fa-perfume"></i>
+                    <h3>Perfume Personalizado</h3>
+                    <p>Creación de fragancias únicas que reflejan tu personalidad y estilo.</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-flask"></i>
+                    <h3>Experimenta</h3>
+                    <p>Descubre nuevas combinaciones y experimenta con diferentes aromas.</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-gift"></i>
+                    <h3>Regalo Perfecto</h3>
+                    <p>Sorprende a tus seres queridos con un perfume personalizado.</p>
+                </div>
+            </div>
             <h2>Nuestras Creaciones</h2>
             <div class="gallery-images">
                 <img src="perfume1.jpg" alt="Perfume 1">
@@ -34,8 +80,11 @@
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
+    <section class="contact" id="contact">
+        <div class="content">
+            <div class="title">
+                <span>Contact Us</span>
+            </div>
             <h2>Contacto</h2>
             <form id="contact-form">
                 <label for="name">Nombre:</label>
@@ -48,5 +97,13 @@
     </section>
 
     <script src="scripts.js"></script>
+
+    <footer>
+        <div class="text">
+            <span>Created By
+                <a href="#">AromaPropio</a>
+                 | &#169; 2024 All Rights Reserved</span>
+        </div>
+    </footer>
 </body>
 </html>

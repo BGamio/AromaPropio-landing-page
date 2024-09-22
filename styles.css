@@ -1,26 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    color: #333;
+    font-family: "Baskerville Old Face";
+    width: 100%;
+    height: auto;
+    background-color: #333;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(114, 77, 53, 0.77);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(114, 77, 53, 0.77);
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+}
+
+.nav-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hamburg,
+.cancel {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: #aaa;
+    opacity: 0;
+    pointer-events: none;
+    font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
+}
+
+.nav-container .links {
+    display: flex;
+}
+
+.nav-container .links a {
+    position: relative;
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s linear;
+}
+
+.nav-container .links a::before {
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #da7259;
+    transition: 0.3s linear;
+}
+
+.nav-container .links a:hover::before {
+    width: 100%;
+}
+
+.nav-container .links a:hover {
+    color: #da7259;
+}
+
+.dropdown{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    transform: translateY(-500px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: blur(4px) brightness(40%);
+    box-shadow: 0 0 20px black;
+    transition: 0.3s linear;
+}
+
+.dropdown .links a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    padding: 15px 0;
+    align-items: center;
+    transition: 0.3s linear;
+}
+
+.dropdown .links a:hover {
+    background: #da7259;
+}
+
+section {
+    width: 100%;
+    min-height: 90vh;
+}
+
+section header {
+    width: 100%;
+    min-height: 90vh;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
 }
 
 header.hero {
-    background-image: url('pexelsnastyasensei954405_7447a398dc444886a49a79093cdf3b13.jpg'); /* Imagen de fondo */
-    background-size: contain;
+    background-image: url('assets/PERFUMES-OLOR-LIMPIO-1140x760.jpg'); /* Imagen de fondo */
+    background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
     text-align: center;
 }
 
 .hero-content {
-    background-color: rgba(36, 34, 34, 0.5);/* Fondo semitransparente */
-    padding: 20px;
+    background-color: rgba(36, 34, 34, 0.5);
+    padding: 40px;
     border-radius: 10px;
 }
 
@@ -55,7 +183,7 @@ header.hero {
 }
 
 .about {
-    background-color: #FFE5D9; /* Coral suave */
+    background-color: #915840; /* Coral suave */
 }
 
 .gallery {
@@ -72,13 +200,13 @@ header.hero {
 }
 
 h2 {
-    color: #FF6F61; /* Coral */
+    color: #8c261c;
     font-size: 2.5em;
     margin-bottom: 20px;
 }
 
 p {
-    color: #FFB347; /* Naranja */
+    color: #251b0b; /* Naranja */
     font-size: 1.2em;
     line-height: 1.6;
     margin-bottom: 20px;
